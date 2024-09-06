@@ -1,0 +1,178 @@
+
+.skill-box{
+    width: 100%;
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: rgba(60,64,67,0.3) 0px 1px 20px 0px,
+                rgba(60,64,67,0.15) 0px 2px 6px 2px;
+   
+}
+
+.skill-box .left-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-box .right-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;  
+}
+
+.skill-box .bar{
+    width: 100%;
+    margin: 20px 0;
+}
+
+.skill-box .bar:first-child{
+   margin-top: 0; 
+}
+
+.skill-box .bar .info,span{
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.skill-box .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #696363;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;/*---*/
+    animation: animate 3s  /*--cubic-bezier(1,0,0.5,1)--*/linear infinite;
+}
+
+.skill-box .progress-line span{
+    height: 100%;
+    background-color: #ff4d00;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+
+    transform-origin: left;/*---*/
+
+    animation: animate 3s 3s linear infinite;
+}
+
+@keyframes animate{
+ 100%{
+    transform: scaleX(1);
+ }
+}
+/*-------Left---Main---Start---*/
+.skill-box .progress-line.html span{
+    width: 90%;
+}
+
+.skill-box .progress-line.css span{
+    width: 80%;
+}
+
+.skill-box .progress-line.boot span{
+    width: 70%;
+}
+
+.skill-box .progress-line.tail span{
+    width: 75%;
+}
+
+.skill-box .progress-line.js span{
+    width: 90%;
+}
+/*-------Left---Main---End-----*/
+
+
+
+/*-------Right---Main---Start---*/
+.skill-box .progress-line.rec span{
+    width: 80%;
+}
+
+.skill-box .progress-line.nood span{
+    width: 70%;
+}
+
+.skill-box .progress-line.Exp span{
+    width: 75%;
+}
+
+.skill-box .progress-line.mon span{
+    width: 90%;
+}
+
+.skill-box .progress-line.fireFig span{
+    width: 90%;
+}
+/*-------Right---Main---End---*/
+
+
+
+.skill-box .progress-line span::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-top-color: #000;
+}
+
+.skill-box .progress-line span::after{
+    position: absolute;
+    right: -12px;
+    top: -28px;
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 1px 8px;
+    animation: showText2 0.5s 1.5s linear infinite;
+}
+ 
+
+
+/*-------Right---Proggress---Number-----Start------*/
+.skill-box .progress-line.rec span::after{
+    content: '80%';
+}
+.skill-box .progress-line.nood span::after{
+    content: '70%';
+}
+.skill-box .progress-line.Exp span::after{
+    content: '75%';
+}
+.skill-box .progress-line.mon span::after{
+    content: '90%';
+}
+.skill-box .progress-line.fireFig span::after{
+    content: '90%';
+}
+/*-------Right---Proggress---Number-----Start------*/
+
+
+
+/*-------Left---Proggress---Number-----Start------*/
+.skill-box .progress-line.html span::after{
+    content: '90%';
+}
+.skill-box .progress-line.css span::after{
+    content: '80%';
+}
+.skill-box .progress-line.boot span::after{
+    content: '70%';
+}
+.skill-box .progress-line.tail span::after{
+    content: '75%';
+}
+.skill-box .progress-line.js span::after{
+    content: '90%';
+}
+/*-------Left----Proggress---Number----End-----*/
+

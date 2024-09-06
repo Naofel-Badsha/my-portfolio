@@ -1,0 +1,16 @@
+
+.animationAbout{
+    animation: flot 3s linear infinite;
+    -webkit-animation: flot 3s linear infinite;
+}
+
+@keyframes flot {
+    0%,
+    100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(2rem); 
+    }
+
+}

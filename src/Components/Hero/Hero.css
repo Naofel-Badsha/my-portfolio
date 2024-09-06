@@ -1,0 +1,18 @@
+.heroBackground{
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+
+.animationHomePage{
+    animation: float 3s linear infinite;
+    --webkit-animation: float 3s linear infinite;
+}
+
+@keyframes float{
+    0%,
+    100%{
+     transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(2rem);  
+    }
+}

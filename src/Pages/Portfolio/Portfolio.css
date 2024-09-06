@@ -1,0 +1,57 @@
+
+.portfolio-contact{
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem; */
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 4.4rem;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.portfolio-col{
+    position: relative;
+}
+
+.portfolio-col img{
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+
+.layer:hover{
+    background: linear-gradient(rgba(22,22,22, 0.06) 0%, #ff4000 100%); 
+}
+
+.layer h3{
+    position: absolute;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
