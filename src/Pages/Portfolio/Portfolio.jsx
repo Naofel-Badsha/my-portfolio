@@ -21,11 +21,11 @@ const Portfolio = () => {
       </div>
       <div className="portfolio-contact grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {/*---------Portfolio-------1---------*/}
-        <div className="portfolio-col" data-aos="fade-right">
+        <div className="portfolio-col flex items-center justify-center" data-aos="fade-right">
           <img src="https://i.ibb.co/zJwkbn2/Portfolio-4.webp" />
           <div className=" absolute top-0 ">
             <Link>
-              <i className="fa-brands fa-github flex items-center justify-center text-3xl bg-deep-orange-500 text-white w-12 h-12 rounded-full ml-28 mt-3"></i>
+              <i className="fa-brands fa-github flex items-center justify-center text-3xl bg-deep-orange-500 text-white w-12 h-12 rounded-full mt-10"></i>
             </Link>
           </div>
           <div className="layer">
@@ -33,11 +33,11 @@ const Portfolio = () => {
           </div>
         </div>
         {/*---------Portfolio-------2---------*/}
-        <div className="portfolio-col" data-aos="fade-down">
+        <div className="portfolio-col flex items-center justify-center" data-aos="fade-down">
           <img src="https://i.ibb.co/nzzMVjh/Portfolio-5.jpg" />
           <div className=" absolute top-0 ">
             <Link>
-              <i className="fa-brands fa-github flex items-center justify-center text-3xl bg-deep-orange-500 text-white w-12 h-12 rounded-full ml-28 mt-3"></i>
+              <i className="fa-brands fa-github flex items-center justify-center text-3xl bg-deep-orange-500 text-white w-12 h-12 rounded-full mt-10"></i>
             </Link>
           </div>
           <div className="layer">
@@ -45,11 +45,11 @@ const Portfolio = () => {
           </div>
         </div>
         {/*---------Portfolio-------3---------*/}
-        <div className="portfolio-col" data-aos="fade-left">
+        <div className="portfolio-col flex items-center justify-center" data-aos="fade-left">
           <img src="https://i.ibb.co/zbB25JJ/Portfolio-1.jpg" />
           <div className=" absolute top-0 ">
             <Link>
-              <i className="fa-brands fa-github flex items-center justify-center text-3xl bg-deep-orange-500 text-white w-12 h-12 rounded-full ml-28 mt-3"></i>
+              <i className="fa-brands fa-github flex items-center justify-center text-3xl bg-deep-orange-500 text-white w-12 h-12 rounded-full mt-10"></i>
             </Link>
           </div>
           <div className="layer">
@@ -57,11 +57,11 @@ const Portfolio = () => {
           </div>
         </div>
         {/*---------Portfolio-------4---------*/}
-        <div className="portfolio-col" data-aos="fade-right">
+        <div className="portfolio-col flex items-center justify-center" data-aos="fade-right">
           <img src="https://i.ibb.co/sW1tHb0/Portfolio-2.jpg" />
           <div className=" absolute top-0 ">
             <Link>
-              <i className="fa-brands fa-github flex items-center justify-center text-3xl bg-deep-orange-500 text-white w-12 h-12 rounded-full ml-28 mt-3"></i>
+              <i className="fa-brands fa-github flex items-center justify-center text-3xl bg-deep-orange-500 text-white w-12 h-12 rounded-full mt-10"></i>
             </Link>
           </div>
           <div className="layer">
@@ -69,11 +69,11 @@ const Portfolio = () => {
           </div>
         </div>
         {/*---------Portfolio-------5---------*/}
-        <div className="portfolio-col" data-aos="fade-up">
+        <div className="portfolio-col flex items-center justify-center" data-aos="fade-up">
           <img src="https://i.ibb.co/qp20Cwc/Portfolio-3.jpg" />
           <div className=" absolute top-0 ">
             <Link>
-              <i className="fa-brands fa-github flex items-center justify-center text-3xl bg-deep-orange-500 text-white w-12 h-12 rounded-full ml-28 mt-3"></i>
+              <i className="fa-brands fa-github flex items-center justify-center text-3xl bg-deep-orange-500 text-white w-12 h-12 rounded-full mt-10"></i>
             </Link>
           </div>
           <div className="layer">
@@ -81,11 +81,11 @@ const Portfolio = () => {
           </div>
         </div>
         {/*---------Portfolio-------6---------*/}
-        <div className="portfolio-col" data-aos="fade-left">
+        <div className="portfolio-col flex items-center justify-center" data-aos="fade-left">
           <img src="https://i.ibb.co/fx10Lfb/Portfolio-9.jpg" />
           <div className=" absolute top-0 ">
             <Link>
-              <i className="fa-brands fa-github flex items-center justify-center text-3xl bg-deep-orange-500 text-white w-12 h-12 rounded-full ml-28 mt-3"></i>
+              <i className="fa-brands fa-github flex items-center justify-center text-3xl bg-deep-orange-500 text-white w-12 h-12 rounded-full mt-10"></i>
             </Link>
           </div>
           <div className="layer">

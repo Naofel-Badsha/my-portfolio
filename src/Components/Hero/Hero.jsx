@@ -23,11 +23,11 @@ const Hero = () => {
   return (
     <div>
       <div className="hero min-h-screen container m-auto">
-        <div className="flex items-center justify-between gap-10 flex-col lg:flex-row-reverse">
+        <div className="flex items-center justify-between gap-10 flex-col lg:flex-row-reverse w-full">
           {/*--------------Image-------------*/}
           <div className="flex-1" data-aos="fade-left">
-            <div className=" bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 animationHomePage heroBackground w-full">
-              <img src={HoneImage} className=" m-auto " />
+            <div className=" bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 animationHomePage heroBackground w-full ">
+              <img src={HoneImage} className="m-auto" />
             </div>
           </div>
           {/*--------------Text-------------*/}
