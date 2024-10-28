@@ -31,8 +31,8 @@ const ContactMe = () => {
                 Naofel Badsha
               </h1>
               <h3 className=" md:text-2xl lg:text-2xl  py-2 text-black">
-                Professional Front end Dveloper, & and basic{" "}
-                <small className="text-2xl text-deep-orange-600 font-bold">MARN Stack</small> Devloper.
+                Professional Front end Developer, & and basic{" "}
+                <small className="text-2xl text-deep-orange-600 font-bold">MARN Stack</small> Developer.
               </h3>
               <h4 className=" md:text-2xl lg:text-2xl py-2 text-black">
                 Are You Looking For Your Business Online Presence? I am here.
@@ -122,14 +122,20 @@ const ContactMe = () => {
 
         {/*----------Form-----------*/}
         <div className="flex-1" data-aos="fade-left">
-          <form className="w-full bg-[#f8f3f3] p-4 w rounded-xl">
+          <form 
+          action='https://getform.io/f/bpjjmdpb'
+          method='POST'
+          className="w-full bg-[#f4eded] p-4 w rounded-xl">
             {/*--------------1-------------*/}
             <div className="form-control py-2">
               <label className="label">
-                <span className="label-text text-xl md:text-2xl lg:text-2xl text-black">Full Name</span>
+                <span className="label-text text-xl md:text-2xl lg:text-2xl text-black">Name</span>
               </label>
               <input
                 type="text"
+                name='name'
+                id='name'
+                autoComplete='name'
                 placeholder="Enter Your Full Name"
                 className="input input-bordered w-full text-xl text-black bg-white"
               />
@@ -141,6 +147,9 @@ const ContactMe = () => {
               </label>
               <input
                 type="email"
+                name='email'
+                id='email'
+                autoComplete='email'
                 placeholder="Enter Your Email"
                 className="input input-bordered w-full text-xl text-black bg-white"
               />
@@ -152,6 +161,9 @@ const ContactMe = () => {
               </label>
               <input
                 type="text"
+                name='subject'
+                id='subject'
+                autoComplete='subject'
                 placeholder="Enter Your Subject"
                 className="input input-bordered w-full text-xl text-black bg-white"
               />
@@ -164,13 +176,16 @@ const ContactMe = () => {
                 </span>
               </label>
               <textarea
-                name="text"
+                type="text"
+                name='message'
+                id='message'
+                autoComplete='message'
                 placeholder="Enter Your Message"
                 className="w-full h-[200px] p-4 text-xl outline-0 rounded-xl text-black bg-white"
               />
             </div>
             <div className="py-6">
-              <button className="btn bg-deep-orange-600 text-xl w-full border-0 text-white">Login</button>
+              <button type='submit' className="btn bg-deep-orange-600 text-xl w-full border-0 text-white">Submit</button>
             </div>
           </form>
         </div>
