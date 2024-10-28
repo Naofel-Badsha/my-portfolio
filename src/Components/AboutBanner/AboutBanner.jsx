@@ -2,6 +2,7 @@ import "../AboutBanner/AboutBanner.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import NaofelBadshaResume from "../../assets/NaofelBadsha.pdf"
 
 const AboutBanner = () => {
   useEffect(() => {
@@ -47,7 +48,7 @@ const AboutBanner = () => {
           </div>
           <div className="py-10">
             {/*--------DownlodePDF------and------CVButton--------*/}
-            <a href="NaofelBadsha.pdf" download="NaofelBadsha.pdf">
+            <a href={NaofelBadshaResume} download="NaofelBadshaResume">
               <button className=" lg:text-xl sm:text-xl text-xl py-3 px-5 bg-deep-orange-600 text-white rounded-md">
                 Download Cv{" "}
                 <i className="fa-solid fa-file-arrow-down ml-2 text-white text-2xl"></i>
