@@ -1,17 +1,16 @@
-import "../AboutBanner/AboutBanner.css"
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import "../AboutBanner/AboutBanner.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const AboutBanner = () => {
   useEffect(() => {
-    AOS.init({duration: "2000"}) 
-  },[])
+    AOS.init({ duration: "2000" });
+  }, []);
 
   return (
     <div className="container m-auto">
       <div className="flex items-center justify-between gap-10 flex-col lg:flex-row-reverse">
-        
         <div className="flex-1" data-aos="fade-left">
           <div className="py-20 animationAbout">
             <img
@@ -47,10 +46,13 @@ const AboutBanner = () => {
             </p>
           </div>
           <div className="py-10">
-            <button className=" lg:text-xl sm:text-xl text-xl py-3 px-5 bg-deep-orange-600 text-white rounded-md">
-              Download Cv{" "}
-              <i className="fa-solid fa-file-arrow-down ml-2 text-white text-2xl"></i>
-            </button>
+            {/*--------DownlodePDF------and------CVButton--------*/}
+            <a href="NaofelBadsha.pdf" download="NaofelBadsha.pdf">
+              <button className=" lg:text-xl sm:text-xl text-xl py-3 px-5 bg-deep-orange-600 text-white rounded-md">
+                Download Cv{" "}
+                <i className="fa-solid fa-file-arrow-down ml-2 text-white text-2xl"></i>
+              </button>
+            </a>
           </div>
         </div>
       </div>
