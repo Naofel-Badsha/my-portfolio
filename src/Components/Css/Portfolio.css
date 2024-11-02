@@ -12,6 +12,8 @@
 
 .portfolio-col{
     position: relative;
+    z-index: -100;
+    
 }
 
 .portfolio-col img{

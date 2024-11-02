@@ -1,11 +1,13 @@
-import "../Hero/Hero.css";
-import HoneImage from "../../../public/img/person-3.png";
+
+import "./Css/hero.css"
+
 import { useTypewriter } from "react-simple-typewriter";
-import { Link } from "react-router-dom";
+
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+// import NaofelBadshaResume from "../../assets/NaofelBadsha.pdf"
 
 const Hero = () => {
   const [text] = useTypewriter({
@@ -22,18 +24,18 @@ const Hero = () => {
 
   return (
     <div>
-      <div className="hero min-h-screen container m-auto">
-        <div className="flex items-center justify-between gap-12 flex-col lg:flex-row-reverse">
+      <div className="hero min-h-screen container m-auto" id="home">
+        <div className="flex -z-50 items-center justify-between gap-12 flex-col lg:flex-row-reverse">
           {/*--------------Image-------------*/}
           <div className="flex-1" data-aos="fade-left">
             <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 animationHomePage heroBackground w-full">
-              <img src={HoneImage} className="m-auto"/>
+              <img src="https://i.ibb.co/RPMjG2J/removebg-preview.png" className="m-auto" />
             </div>
           </div>
           {/*--------------Text-------------*/}
           <div className="flex-1" data-aos="fade-right">
             <h3 className="text-xl md:text-3xl lg:text-3xl text-black font-bold">
-              Hello, My Name Is
+              Hi👋 there, I'm
             </h3>
             <h1 className="text-4xl md:text-5xl lg:text-7xl text-black font-bold py-5">
               Naofel{" "}
@@ -54,19 +56,28 @@ const Hero = () => {
             </p>
             <div>
               <div className="flex gap-5">
-                <Link to="https://www.facebook.com/profile.php?id=61550632539237">
+                <a to="https://www.facebook.com/profile.php?id=61550632539237">
                   <i className="fa-brands fa-facebook text-4xl text-deep-orange-600 hover:-translate-y-2 duration-100 delay-100"></i>
-                </Link>
-                <Link to="https://x.com/NaofelMd25125">
+                </a>
+                <a to="https://x.com/NaofelMd25125">
                   <i className="fa-brands fa-twitter text-4xl ml-3 text-deep-orange-600 hover:-translate-y-2 duration-100 delay-100"></i>
-                </Link>
-                <Link to="https://www.linkedin.com/in/md-naofel-badsha">
+                </a>
+                <a to="https://www.linkedin.com/in/md-naofel-badsha">
                   <i className="fa-brands fa-linkedin text-4xl ml-3 text-deep-orange-600 hover:-translate-y-2 duration-100 delay-100"></i>
-                </Link>
-                <Link to="https://www.instagram.com/naofelbadsha007">
+                </a>
+                <a to="https://www.instagram.com/naofelbadsha007">
                   <i className="fa-brands fa-instagram text-4xl ml-3 text-deep-orange-600 hover:-translate-y-2 duration-100 delay-100"></i>
-                </Link>
+                </a>
               </div>
+            </div>
+            <div className="py-10">
+              {/*--------DownlodePDF------and------CVButton--------*/}
+              {/* <a href={NaofelBadshaResume} download="NaofelBadshaResume">
+                <button className=" lg:text-xl sm:text-xl text-xl py-3 px-5 bg-deep-orange-600 text-white rounded-md">
+                  Download Cv{" "}
+                  <i className="fa-solid fa-file-arrow-down ml-2 text-white text-2xl"></i>
+                </button>
+              </a> */}
             </div>
           </div>
         </div>

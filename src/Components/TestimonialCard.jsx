@@ -10,8 +10,8 @@ const TestimonialCard = ({ testimonial }) => {
   },[])
   return (
     <div>
-      <div className="card border-2 border-deep-orange-600 shadow-xl" data-aos="fade-right">
-        <div className="p-4">
+      <div className=" border-2 border-deep-orange-600 shadow-xl" data-aos="fade-right">
+        <div className="p-4 ">
             <div className="flex items-center justify-between">
               <div className="">
                 <img src={image} className="w-14 h-14 rounded-full object-cover"/>

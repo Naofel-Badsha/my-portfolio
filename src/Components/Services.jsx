@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
@@ -8,7 +8,7 @@ const Services = () => {
     AOS.init({duration: "2000"}) 
   },[])
   return (
-    <div className="container m-auto">
+    <div className="container m-auto" id='services'>
       {/*-----------Heading-----------*/}
       <div className="mt-16">
         <h1 className="text-3xl md:text-4xl lg:text-7xl text-center text-black">
@@ -30,11 +30,11 @@ const Services = () => {
               optimal viewing experience across and all devices.
             </p>
             <div className="py-5">
-              <Link to="/contactMe">
+              <a href=''>
                 <button className="bg-deep-orange-600 hover:bg-black hover:text-white hover:ml-2 duration-200 delay-100 py-3 px-6 text-xl text-white rounded-lg hover:rounded-bl-lg ">
                   Seay Hello <i className="fa-solid fa-arrow-right"></i>
                 </button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -50,11 +50,11 @@ const Services = () => {
               visions into engaging, interactive web experiences.
             </p>
             <div className="py-5">
-              <Link to="/contactMe">
+              <a href=''>
                 <button className="bg-deep-orange-600 hover:bg-black hover:text-white hover:ml-2 duration-200 delay-100 py-3 px-6 text-xl text-white rounded-lg hover:rounded-bl-lg ">
                   Seay Hello <i className="fa-solid fa-arrow-right"></i>
                 </button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -70,11 +70,11 @@ const Services = () => {
               foundations that power seamless web applications.
             </p>
             <div className="py-5">
-              <Link to="/contactMe">
+              <a  href=''>
                 <button className="bg-deep-orange-600 hover:bg-black hover:text-white hover:ml-2 duration-200 delay-100 py-3 px-6 text-xl text-white rounded-lg hover:rounded-bl-lg ">
                   Seay Hello <i className="fa-solid fa-arrow-right"></i>
                 </button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
