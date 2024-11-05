@@ -14,7 +14,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 1) {
         setIsSticky(true);
       } else {
         setIsSticky(false);
@@ -32,7 +32,6 @@ const Navbar = () => {
     { link: "About", path: "about" },
     { link: "Services", path: "services" },
     { link: "Skills", path: "skills" },
-    { link: "Testimonial", path: "testimonial" },
     { link: "Portfolio", path: "portfolio" },
     { link: "Contact", path: "contact" },
   ];
@@ -68,7 +67,7 @@ const Navbar = () => {
           </ul>
           {/*-------Button--------Github------*/}
           <div className="space-x-6 ">
-            <a >
+            <a href="">
               <button className="btn bg-deep-orange-600 border-0 text-2xl text-white">
                 GitHub
               </button>

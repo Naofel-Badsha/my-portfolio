@@ -24,11 +24,11 @@ const Testimonial = () => {
   return (
     <div className="container m-auto">
       {/*-----------Heading-----------*/}
-      <div className="py-10 mb-10">
-        <h1 className="text-3xl md:text-4xl lg:text-7xl text-center text-black">
+      <div className="py-10 mb-10 mt-20">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-black">
           Testimonial
         </h1>
-        <div className="w-40 h-[2px] bg-deep-orange-600 m-auto mt-2"></div>
+        <div className="w-40 h-[3px] bg-deep-orange-600 m-auto mt-2"></div>
       </div>
 
       <Swiper
@@ -36,7 +36,7 @@ const Testimonial = () => {
         spaceBetween={25}
         slidesPerView={1}
         autoplay={true}
-        grabCursor={true}
+        // grabCursor={true}
         delay={"100"}
         loop={true}
         className="mySwiper"
@@ -52,15 +52,17 @@ const Testimonial = () => {
           },
         }}
         >
-        <div>
+        <div className="-z-50">
           {/*-----------Slider-------1-------*/}
           {testimonials.map((testimonial) => (
-            <SwiperSlide>
+            <div className="-z-50">
+                          <SwiperSlide>
               <TestimonialCard
                 key={testimonial.id}
                 testimonial={testimonial}
               ></TestimonialCard>
             </SwiperSlide>
+            </div>
           ))}
         </div>
       </Swiper>

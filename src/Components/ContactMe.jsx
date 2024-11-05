@@ -6,19 +6,23 @@ const ContactMe = () => {
   useEffect(() => {
     AOS.init({ duration: "2000" });
   }, []);
+
+  // data-aos="fade-right"
+  // data-aos="fade-left"
+
   return (
-    <div className="container m-auto">
+    <div className="container m-auto px-2">
       {/*-----------Heading-----------*/}
-      <div className="py-16">
-        <h1 className="text-3xl md:text-4xl lg:text-7xl text-center text-black">
+      <div className="py-16 mt-16 mb-10">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-black">
           Contact Me
         </h1>
-        <div className="w-40 h-[2px] bg-deep-orange-600 m-auto mt-2"></div>
+        <div className="w-20 h-[2px] bg-deep-orange-600 m-auto mt-2"></div>
       </div>
 
       <div className="flex justify-between gap-10 flex-col lg:flex-row">
         {/*----------Img-------And----Artical--------*/}
-        <div className="flex-1" data-aos="fade-right">
+        <div className="flex-1">
           {/*----------Img---------------*/}
           <div className="">
             <img
@@ -29,17 +33,17 @@ const ContactMe = () => {
           {/*--------------Artical------------*/}
           <div>
             <div className="py-7">
-              <h1 className="text-3xl md:text-5xl lg:text-5xl text-black py-3">
+              <h1 className="text-3xl md:text-4xl lg:text-4xl text-black py-3">
                 Naofel Badsha
               </h1>
-              <h3 className=" md:text-2xl lg:text-2xl  py-2 text-black">
+              <h3 className="text-xl md:text-2xl lg:text-2xl  py-2 text-blue-gray-500 font-medium">
                 Professional Front end Developer, & and basic{" "}
                 <small className="text-2xl text-deep-orange-600 font-bold">
                   MARN Stack
                 </small>{" "}
                 Developer.
               </h3>
-              <h4 className=" md:text-2xl lg:text-2xl py-2 text-black">
+              <h4 className="text-xl md:text-2xl lg:text-2xl py-2 text-blue-gray-500 font-medium">
                 Are You Looking For Your Business Online Presence? I am here.
               </h4>
             </div>
@@ -50,10 +54,10 @@ const ContactMe = () => {
                 <div className="flex gap-3 py-3">
                   <i className="fa-solid fa-location-dot text-3xl text-deep-orange-600"></i>
                   <div>
-                    <h2 className="text-xl md:text-3xl lg:text-3xl text-black">
+                    <h2 className="text-xl md:text-3xl lg:text-3xl text-black font-bold">
                       Address
                     </h2>
-                    <p className="md:text-xl lg:text-xl text-black">
+                    <p className="md:text-xl lg:text-xl mt-2 text-blue-gray-500 font-medium">
                       Gulistan, Dhaka, Bangladesh
                     </p>
                   </div>
@@ -62,10 +66,10 @@ const ContactMe = () => {
                 <div className="flex gap-3 py-3">
                   <i className="fa-solid fa-envelope text-3xl text-deep-orange-600"></i>
                   <div>
-                    <h2 className="text-xl md:text-3xl lg:text-3xl text-black">
+                    <h2 className="text-xl md:text-3xl lg:text-3xl text-black font-bold">
                       Email
                     </h2>
-                    <p className="md:text-xl lg:text-xl text-black">
+                    <p className="md:text-xl lg:text-xl mt-2 text-blue-gray-500 font-medium">
                       naofelbadsha@gmail.com
                     </p>
                   </div>
@@ -76,10 +80,10 @@ const ContactMe = () => {
                 <div className="flex gap-3 py-3">
                   <i className="fa-brands fa-whatsapp text-3xl text-deep-orange-600"></i>
                   <div>
-                    <h2 className="text-xl md:text-3xl lg:text-3xl text-black">
+                    <h2 className="text-xl md:text-3xl lg:text-3xl text-black font-bold">
                       Whatsapp
                     </h2>
-                    <p className="md:text-xl lg:text-xl text-black">
+                    <p className="md:text-xl lg:text-xl mt-2 text-blue-gray-500 font-medium">
                       +88 01737-268782
                     </p>
                   </div>
@@ -90,7 +94,7 @@ const ContactMe = () => {
         </div>
 
         {/*----------Form-----------*/}
-        <div className="flex-1" data-aos="fade-left">
+        <div className="flex-1">
           <form
             action="https://getform.io/f/bpjjmdpb"
             method="POST"
@@ -99,7 +103,7 @@ const ContactMe = () => {
             {/*--------------1-------------*/}
             <div className="form-control py-2">
               <label className="label">
-                <span className="label-text text-xl md:text-2xl lg:text-2xl text-black">
+                <span className="label-text text-xl md:text-2xl lg:text-2xl text-blue-gray-500 font-medium">
                   Name
                 </span>
               </label>
@@ -115,7 +119,7 @@ const ContactMe = () => {
             {/*--------------2-------------*/}
             <div className="form-control py-2">
               <label className="label">
-                <span className="label-text text-xl md:text-2xl lg:text-2xl text-black">
+                <span className="label-text text-xl md:text-2xl lg:text-2xl text-blue-gray-500 font-medium">
                   Email
                 </span>
               </label>
@@ -131,7 +135,7 @@ const ContactMe = () => {
             {/*--------------3-------------*/}
             <div className="form-control py-2">
               <label className="label">
-                <span className="label-text text-xl md:text-2xl lg:text-2xl text-black">
+                <span className="label-text text-xl md:text-2xl lg:text-2xl text-blue-gray-500 font-medium">
                   Subject
                 </span>
               </label>
@@ -147,7 +151,7 @@ const ContactMe = () => {
             {/*--------------4-------------*/}
             <div className="form-control py-2">
               <label className="label">
-                <span className="label-text text-xl md:text-2xl lg:text-2xl text-black">
+                <span className="label-text text-xl md:text-2xl lg:text-2xl text-blue-gray-500 font-medium">
                   Your Message
                 </span>
               </label>

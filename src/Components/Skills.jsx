@@ -1,99 +1,41 @@
+import { useEffect, useState } from "react";
+
 const Skills = () => {
+  const [skills, setSkills] = useState([]);
+  useEffect(() => {
+    fetch("/skills.json")
+      .then((res) => res.json())
+      .then((data) => setSkills(data));
+  }, []);
   return (
-    <div className="container m-auto">
+    <div className="container m-auto px-2">
       {/*-----------Heading-----------*/}
       <div className="mt-20 py-5">
-        <h1 className="text-3xl md:text-4xl lg:text-7xl text-center text-black">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-black">
           My Skills
         </h1>
-        <div className="w-40 h-[2px] bg-deep-orange-600 m-auto mt-2"></div>
+        <div className="w-20 h-[3px] bg-deep-orange-600 m-auto mt-4"></div>
       </div>
 
-      <div className="overflow-auto flex items-center justify-center border-2 border-deep-orange-600 rounded-lg  mt-10">
-        <div className="py-6 px-6">
-          {/*---------Design-------Skills-----*/}
-          <h3 className="text-2xl md:text-3xl lg:text-3xl text-deep-orange-600 font-medium py-5">
-            Design Skills
-          </h3>
-          <div className="flex gap-6">
-            {/*--------Design-----Image----1------*/}
+      {/*===============Design===========Skills===========*/}
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
+        {skills.map((item) => (
+          <div
+            key={item.id}
+            className="flex items-center gap-2 border-2 border-gray-400 rounded-lg py-2 px-4"
+          >
             <img
-              src="https://i.ibb.co.com/3WZL6sg/Html.png"
-              className="w-[120px] h-[120px] object-cover border-2 border-gray-400 p-1 rounded-full"
+              src={item.image}
+              className="w-[80px] h-[80px] object-cover"
             />
-            {/*--------Design-----Image----2------*/}
-            <img
-              src="https://i.ibb.co.com/55t71ZV/Css.png"
-              className="w-[120px] h-[120px] object-cover border-2 border-gray-400 p-1 rounded-full"
-            />
-            {/*--------Design-----Image----3------*/}
-            <img
-              src="https://i.ibb.co.com/TLTk7ZS/Java-Scrict.png"
-              className="w-[120px] h-[120px] object-cover border-2 border-gray-400 p-1 rounded-full"
-            />
-            {/*--------Design-----Image----4------*/}
-            <img
-              src="https://i.ibb.co.com/QXFR1rr/Taildind.png"
-              className="w-[120px] h-[120px] object-cover border-2 border-gray-400 p-1 rounded-full"
-            />
-            {/*--------Design-----Image----5------*/}
-            <img
-              src="https://i.ibb.co.com/vd8YJWC/Boot-Strap.png"
-              className="w-[120px] h-[120px] object-cover border-2 border-gray-400 p-1 rounded-full"
-            />
-            {/*--------Design-----Image----6------*/}
-            <img
-              src="https://i.ibb.co.com/sPTZ010/Figmat.png"
-              className="w-[120px] h-[120px] object-cover border-2 border-gray-400 p-1 rounded-full"
-            />
-            {/*--------Design-----Image----7------*/}
-            <img
-              src="https://i.ibb.co.com/YpKjRmm/React.png"
-              className="w-[120px] h-[120px] object-cover border-2 border-gray-400 p-1 rounded-full"
-            />
-          </div>
-          {/*---------Development-------Skills-----*/}
-          <div className="mt-10">
-            <h3 className="text-2xl md:text-3xl lg:text-3xl text-deep-orange-600 font-medium py-5">
-              Development Skills
-            </h3>
-            <div className="flex gap-6">
-              {/*--------Development-----Image----1------*/}
-              <img
-                src="https://i.ibb.co.com/8M45RtX/Nodejs.png"
-                className="w-[120px] h-[120px] object-cover border-2 border-gray-400 p-1 rounded-full"
-              />
-              {/*--------Development-----Image----2------*/}
-              <img
-                src="https://i.ibb.co.com/qJtz9VB/Express-Js.png"
-                className="w-[120px] h-[120px] object-cover border-2 border-gray-400 p-1 rounded-full"
-              />
-              {/*--------Development-----Image----3------*/}
-              <img
-                src="https://i.ibb.co.com/YhT2jfk/MongoDb.png"
-                className="w-[120px] h-[120px] object-cover border-2 border-gray-400 p-1 rounded-full"
-              />
-              {/*--------Development-----Image----4------*/}
-              <img
-                src="https://i.ibb.co.com/Jt6tx8d/Jwt.png"
-                className="w-[120px] h-[120px] object-cover border-2 border-gray-400 p-1 rounded-full"
-              />
-              {/*--------Development-----Image----5------*/}
-              <img
-                src="https://i.ibb.co.com/nC8MYPR/Firebase.png"
-                className="w-[120px] h-[120px] object-cover border-2 border-gray-400 p-1 rounded-full"
-              />
-              {/*--------Development-----Image----6------*/}
-              <img
-                src="https://i.ibb.co.com/3W3G29m/Git-2.png"
-                className="w-[120px] h-[120px] object-cover border-2 border-gray-400 p-1 rounded-full"
-              />
-
-              {/*--------Development-----Image----7------*/}
-              <img src="" className="" />
+            <div>
+              <h2 className="text-2xl text-black font-bold">{item.titleName}</h2>
+              <h4 className="text-xl text-blue-gray-500 mt-1 font-medium">
+                {item.works}
+              </h4>
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );
