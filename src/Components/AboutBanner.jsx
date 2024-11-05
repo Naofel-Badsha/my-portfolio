@@ -12,11 +12,11 @@ const AboutBanner = () => {
   // data-aos="fade-left"
 
   return (
-    <div className="hero min-h-screen container m-auto px-2" id="about">
-      <div className="flex -z-50  items-center justify-between gap-10 flex-col lg:flex-row">
+    <div className="flex items-center justify-center min-h-screen container border-4 m-auto px-2" id="about">
+      <div className="flex -z-50 items-center justify-between gap-10 flex-col lg:flex-row">
         {/*------------Image-------------*/}
-        <div className="flex-1">
-          <div className="py-20 animationAbout">
+        <div className="flex-1 animationAbout">
+          <div className="py-20 ">
             <img
               src="https://i.ibb.co/RPMjG2J/removebg-preview.png"
               className="w-full h-[850px] rounded-tr-[400px] rounded-tl-[400px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500   object-cover"

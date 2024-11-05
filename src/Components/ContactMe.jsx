@@ -11,7 +11,7 @@ const ContactMe = () => {
   // data-aos="fade-left"
 
   return (
-    <div className="container m-auto px-2">
+    <div className="container m-auto px-2" id="contact">
       {/*-----------Heading-----------*/}
       <div className="py-16 mt-16 mb-10">
         <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-black">

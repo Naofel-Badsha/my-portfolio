@@ -5,7 +5,6 @@ import { useTypewriter } from "react-simple-typewriter";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import profileImage from "../assets/Profile-2.png";
 
 import NaofelBadshaResume from "../assets/NaofelBadsha.pdf";
 
@@ -26,10 +25,10 @@ const Hero = () => {
   // data-aos="fade-right"
   // https://i.ibb.co/RPMjG2J/removebg-preview.png
   return (
-    <div className="hero container m-auto min-h-screen px-2 py-20" id="home">
-      <div className="flex -z-50 items-center justify-between gap-12 flex-col lg:flex-row-reverse">
+    <div className="flex items-center justify-center border-4 container m-auto min-h-screen px-2 py-20" id="home">
+      <div className="flex items-center justify-between gap-12 flex-col lg:flex-row-reverse">
         {/*--------------Image-------------*/}
-        <div className="flex-1">
+        <div className="flex-1 animationHomePage">
           <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 animationHomePage heroBackground w-full">
             <img
               src="https://i.ibb.co/RPMjG2J/removebg-preview.png"
@@ -38,7 +37,7 @@ const Hero = () => {
           </div>
         </div>
         {/*--------------Text-------------*/}
-        <div className="flex-1">
+        <div className="flex-1 mt-10">
           <h3 className="text-xl md:text-3xl lg:text-3xl text-black font-bold">
             Hi👋 there, I'm
           </h3>
@@ -77,7 +76,7 @@ const Hero = () => {
           </div>
           <div className="py-10">
             {/*--------DownlodePDF------and------CVButton--------*/}
-            <a href="" download="NaofelBadshaResume">
+            <a href={NaofelBadshaResume} download="NaofelBadshaResume">
               <button className=" lg:text-xl sm:text-xl text-xl py-3 px-5 bg-deep-orange-600 text-white rounded-md">
                 Download Cv{" "}
                 <i className="fa-solid fa-file-arrow-down ml-2 text-white text-2xl"></i>

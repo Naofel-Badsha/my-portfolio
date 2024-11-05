@@ -8,7 +8,7 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <div className="container m-auto px-2">
+    <div className="container m-auto px-2" id="portfolio">
       {/*-----------Heading-----------*/}
       <div className="mt-20 py-5">
         <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-black">

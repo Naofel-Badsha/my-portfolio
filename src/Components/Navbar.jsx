@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
+import { Link } from "react-scroll";
 import { IoClose } from "react-icons/io5";
-
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,12 +28,12 @@ const Navbar = () => {
 
   //---------Nav-------Items--------
   const navItems = [
-    { link: "Home", path: "home" },
-    { link: "About", path: "about" },
-    { link: "Services", path: "services" },
-    { link: "Skills", path: "skills" },
-    { link: "Portfolio", path: "portfolio" },
-    { link: "Contact", path: "contact" },
+    { id: 1, title: "Home", link: "home" },
+    { id: 2, title: "About", link: "about" },
+    { id: 3, title: "Services", link: "services" },
+    { id: 4, title: "Skills", link: "skills" },
+    { id: 5, title: "Portfolio", link: "portfolio" },
+    { id: 6, title: "Contact", link: "contact" },
   ];
 
   return (
@@ -52,17 +52,22 @@ const Navbar = () => {
           </a>
           {/*---------Nav-------Items--------*/}
           <ul className="lg:flex space-x-6 hidden">
-            {navItems.map(({ link, path }) => (
-              <a href=""
-                to={path}
-                spy={true}
-                smooth={true}
-                offset={-100}
-                key={path}
-                className="block text-2xl font-medium text-black hover:text-deep-orange-600 focus:text-deep-orange-600"
+            {navItems.map(({ id, title, link }) => (
+              <li
+                className="block cursor-pointer text-2xl font-medium text-black hover:text-deep-orange-600 focus:text-deep-orange-600"
+                key={id}
               >
-                {link}
-              </a>
+                <Link
+                  activeClass="active"
+                  to={link}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  {title}
+                </Link>
+              </li>
             ))}
           </ul>
           {/*-------Button--------Github------*/}
@@ -86,21 +91,26 @@ const Navbar = () => {
         </div>
         {/*--------Nav----Items--for---Mobial---Device------*/}
         <div
-          className={`space-y-4 px-4 mt-16 py-7 bg-gray-200 lg:hidden ${
+          className={`space-y-4 px-4 mt-20 py-7 bg-gray-200  lg:hidden ${
             isMenuOpen ? "block fixed top-0 right-0 left-0 " : "hidden"
           }`}
         >
-          {navItems.map(({ link, path }) => (
-            <a href=""
-              to={path}
-              spy={true}
-              smooth={true}
-              offset={-100}
-              key={path}
-              className="block text-2xl font-medium text-black hover:text-deep-orange-600 focus:text-deep-orange-600"
+          {navItems.map(({ id, title, link }) => (
+            <li
+              className="block cursor-pointer text-2xl font-medium text-black hover:text-deep-orange-600 focus:text-deep-orange-600"
+              key={id}
             >
-              {link}
-            </a>
+              <Link
+                activeClass="active"
+                to={link}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                {title}
+              </Link>
+            </li>
           ))}
         </div>
       </nav>

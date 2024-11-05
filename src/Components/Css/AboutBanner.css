@@ -2,6 +2,7 @@
 .animationAbout{
     animation: flot 3s linear infinite;
     -webkit-animation: flot 3s linear infinite;
+    z-index: -100;
 }
 
 @keyframes flot {

@@ -5,6 +5,7 @@
 .animationHomePage{
     animation: float 3s linear infinite;
     --webkit-animation: float 3s linear infinite;
+    z-index: -100;
 }
 
 @keyframes float{
