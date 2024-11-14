@@ -1,7 +1,6 @@
 import "./Css/hero.css";
 
 import { useTypewriter } from "react-simple-typewriter";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -24,12 +23,13 @@ const Hero = () => {
   // data-aos="fade-left"
   // data-aos="fade-right"
   // https://i.ibb.co/RPMjG2J/removebg-preview.png
+  // bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
   return (
-    <div className="flex items-center justify-center border-4 container m-auto min-h-screen px-2 py-20" id="home">
+    <div className="flex items-center justify-center container m-auto min-h-screen px-2 py-20" id="home">
       <div className="flex items-center justify-between gap-12 flex-col lg:flex-row-reverse">
         {/*--------------Image-------------*/}
         <div className="flex-1 animationHomePage">
-          <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 animationHomePage heroBackground w-full">
+          <div className="bg-gradient-to-r from-[#1c1e22] via-[#262a2e] to-deep-orange-600 animationHomePage heroBackground w-full">
             <img
               src="https://i.ibb.co/RPMjG2J/removebg-preview.png"
               className="m-auto  flex items-center justify-center object-cover"
@@ -43,7 +43,7 @@ const Hero = () => {
           </h3>
           <h1 className="text-4xl md:text-5xl lg:text-5xl text-black font-bold py-5">
             Naofel{" "}
-            <span className="text-4xl md:text-5xl lg:text-5xl text-deep-orange-600">
+            <span className="text-4xl md:text-5xl lg:text-5xl text-deep-orange-00">
               Badsha
             </span>
           </h1>

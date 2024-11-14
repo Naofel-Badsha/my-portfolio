@@ -2,6 +2,7 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import "./Css/Shadow.css"
 
 const Services = () => {
   useEffect(() => {
@@ -24,7 +25,8 @@ const Services = () => {
 
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 py-20">
         {/*-------------Services--------1---------*/}
-        <div className="p-6 bg-white border-2 border-gray-400 rounded-lg shadow">
+        {/* bg-white border-2 border-gray-400 */}
+        <div className="p-6 shadowOne rounded-lg shadow">
           <div className="text-center">
             <div className="flex items-center justify-center w-20 h-20 rounded-full m-auto bg-deep-orange-600">
               <i className="fa-solid fa-code text-4xl text-white"></i>
@@ -44,7 +46,7 @@ const Services = () => {
           </div>
         </div>
         {/*-------------Services--------2---------*/}
-        <div className="p-6 bg-white border-2 border-gray-400 rounded-lg shadow">
+        <div className="p-6 shadowOne rounded-lg shadow">
           <div className="text-center">
             <div className="flex items-center justify-center w-20 h-20 rounded-full m-auto bg-deep-orange-600">
               <i className="fa-solid fa-laptop-code text-4xl text-white"></i>
@@ -64,7 +66,7 @@ const Services = () => {
           </div>
         </div>
         {/*-------------Services--------3---------*/}
-        <div className="p-6 bg-white border-2 border-gray-400 rounded-lg shadow">
+        <div className="p-6 shadowOne rounded-lg shadow">
           <div className="text-center">
             <div className="flex items-center justify-center w-20 h-20 rounded-full m-auto bg-deep-orange-600">
               <i className="fa-solid fa-server text-4xl text-white"></i>

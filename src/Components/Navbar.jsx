@@ -14,7 +14,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 1) {
+      if (window.scrollY > 200) {
         setIsSticky(true);
       } else {
         setIsSticky(false);
@@ -72,7 +72,7 @@ const Navbar = () => {
           </ul>
           {/*-------Button--------Github------*/}
           <div className="space-x-6 ">
-            <a href="">
+            <a href="https://github.com/Naofel-Badsha">
               <button className="btn bg-deep-orange-600 border-0 text-2xl text-white">
                 GitHub
               </button>
@@ -92,7 +92,7 @@ const Navbar = () => {
         {/*--------Nav----Items--for---Mobial---Device------*/}
         <div
           className={`space-y-4 px-4 mt-20 py-7 bg-gray-200  lg:hidden ${
-            isMenuOpen ? "block fixed top-0 right-0 left-0 " : "hidden"
+            isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"
           }`}
         >
           {navItems.map(({ id, title, link }) => (

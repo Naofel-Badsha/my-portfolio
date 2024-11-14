@@ -5,7 +5,8 @@
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  background-color: #fff;
+  /* background-color: linear-gradient(145deg, #122025, #23272b); */
+  background-color: floralwhite;
 }
 
 

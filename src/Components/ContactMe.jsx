@@ -1,6 +1,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import "./Css/Shadow.css";
 
 const ContactMe = () => {
   useEffect(() => {
@@ -22,7 +23,7 @@ const ContactMe = () => {
 
       <div className="flex justify-between gap-10 flex-col lg:flex-row">
         {/*----------Img-------And----Artical--------*/}
-        <div className="flex-1">
+        <div className="flex-1 shadowOne rounded-xl p-5">
           {/*----------Img---------------*/}
           <div className="">
             <img
@@ -94,11 +95,12 @@ const ContactMe = () => {
         </div>
 
         {/*----------Form-----------*/}
-        <div className="flex-1">
+        <div className="flex-1 shadowOne ">
           <form
             action="https://getform.io/f/bpjjmdpb"
             method="POST"
-            className="w-full bg-[#f4eded] p-4 w rounded-xl"
+            // bg-[#f4eded]
+            className="w-full  p-4 w rounded-xl"
           >
             {/*--------------1-------------*/}
             <div className="form-control py-2">

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import "./Css/Shadow.css"
 const Skills = () => {
   const [skills, setSkills] = useState([]);
   useEffect(() => {
@@ -22,14 +22,14 @@ const Skills = () => {
         {skills.map((item) => (
           <div
             key={item.id}
-            className="flex items-center gap-2 border-2 border-gray-400 rounded-lg py-2 px-4"
+            className="flex items-center shadowOne gap-4  rounded-lg py-3 px-4"
           >
             <img
               src={item.image}
               className="w-[80px] h-[80px] object-cover"
             />
             <div>
-              <h2 className="text-2xl text-black font-bold">{item.titleName}</h2>
+              <h2 className="text-2xl text-blue-gray-300 font-bold">{item.titleName}</h2>
               <h4 className="text-xl text-blue-gray-500 mt-1 font-medium">
                 {item.works}
               </h4>
