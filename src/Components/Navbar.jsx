@@ -39,22 +39,22 @@ const Navbar = () => {
   return (
     <header className="w-full bg-white md:bg-transparent fixed top-0 left-0 right-0">
       <nav
-        className={`z-50 py-4 lg:px-14 px-4 ${
+        className={`z-50 py-4 lg:px-14 px-4 text-whibg-white${
           isSticky
-            ? "sticky  top-0 left-0 right-0 border-b bg-white duration-300"
+            ? "sticky  top-0 left-0 right-0 border-b border-black bg-[#122025] text-white duration-300"
             : ""
         }`}
       >
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center container m-auto ">
           {/*---------Logo----------*/}
           <a>
-            <span className="text-black text-3xl font-bold ">N.B</span>
+            <span className="text-black text-2xl md:text-3xl lg:text-3xl font-medium md:font-bold lg:font-bold">Badsha</span>
           </a>
           {/*---------Nav-------Items--------*/}
           <ul className="lg:flex space-x-6 hidden">
             {navItems.map(({ id, title, link }) => (
               <li
-                className="block cursor-pointer text-2xl font-medium text-black hover:text-deep-orange-600 focus:text-deep-orange-600"
+                className="block cursor-pointer text-2xl font-medium  hover:text-deep-orange-600 focus:text-deep-orange-600"
                 key={id}
               >
                 <Link
@@ -73,7 +73,7 @@ const Navbar = () => {
           {/*-------Button--------Github------*/}
           <div className="space-x-6 ">
             <a href="https://github.com/Naofel-Badsha">
-              <button className="btn bg-deep-orange-600 border-0 text-2xl text-white">
+              <button className="btn bg-deep-orange-600 border-0 text-xlmd:text-2xl lg:text-2xl text-white hover:bg-[#23272b]">
                 GitHub
               </button>
             </a>
@@ -82,9 +82,9 @@ const Navbar = () => {
           <div className="lg:hidden">
             <button onClick={toggleMenu} className="focus:text-deep-orange-600">
               {isMenuOpen ? (
-                <IoClose className="text-4xl text-black" />
+                <IoClose className="text-4xl text-text-white" />
               ) : (
-                <FaBars className="text-3xl text-black" />
+                <FaBars className="text-3xl text-text-white" />
               )}
             </button>
           </div>
@@ -120,54 +120,3 @@ const Navbar = () => {
 
 export default Navbar;
 
-{
-  /* <div className="navbar sticky inset-0 z-10  w-full max-w-full rounded-none border  bg-opacity-30 py-2 px-4 text-black shadow-md backdrop-blur-2xl backdrop-saturate-200 lg:px-2 lg:py-2">
-<div className="container m-auto">
-  <div className="navbar ">
-    <div className="navbar-start">
-      <div className="dropdown">
-        <div
-          tabIndex={0}
-          role="button"
-          className="btn btn-ghost lg:hidden"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h8m-8 6h16"
-            />
-          </svg>
-        </div>
-        <ul
-          tabIndex={0}
-          className="menu  dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 gap-6"
-        >
-          {navlink}
-        </ul>
-      </div>
-      <a className="text-black text-3xl font-bold">N.Badsha</a>
-    </div>
-    <div className="navbar-center hidden lg:flex">
-      <ul className="menu menu-horizontal px-1 gap-6">{navlink}</ul>
-    </div>
-    <div className="navbar-end">
-      <Link to="https://github.com/Naofel-Badsha">
-        <button className="btn bg-deep-orange-600 border-0 text-2xl text-white">
-          {" "}
-          <i className="fa-brands fa-github text-4xl text-white  ml-3 hover:translate-x-1 duration-100 delay-100"></i>{" "}
-          GitHub
-        </button>
-      </Link>
-    </div>
-  </div>
-</div>
-</div> */
-}
