@@ -48,13 +48,13 @@ const Navbar = () => {
         <div className="flex justify-between items-center container m-auto ">
           {/*---------Logo----------*/}
           <a>
-            <span className="text-black text-2xl md:text-3xl lg:text-3xl font-medium md:font-bold lg:font-bold">Badsha</span>
+            <span className="text-deep-orange-700 text-2xl md:text-3xl lg:text-3xl font-medium md:font-bold lg:font-bold">Badsha</span>
           </a>
           {/*---------Nav-------Items--------*/}
           <ul className="lg:flex space-x-6 hidden">
             {navItems.map(({ id, title, link }) => (
               <li
-                className="block cursor-pointer text-2xl font-medium  hover:text-deep-orange-600 focus:text-deep-orange-600"
+                className="block cursor-pointer text-2xl font-medium  hover:text-deep-orange-700 focus:text-deep-orange-700"
                 key={id}
               >
                 <Link
@@ -73,14 +73,14 @@ const Navbar = () => {
           {/*-------Button--------Github------*/}
           <div className="space-x-6 ">
             <a href="https://github.com/Naofel-Badsha">
-              <button className="btn bg-deep-orange-600 border-0 text-xlmd:text-2xl lg:text-2xl text-white hover:bg-[#23272b]">
+              <button className="btn bg-deep-orange-700 border-0 text-xlmd:text-2xl lg:text-2xl text-white hover:bg-[#23272b]">
                 GitHub
               </button>
             </a>
           </div>
           {/*--------Menu-----Bars------*/}
           <div className="lg:hidden">
-            <button onClick={toggleMenu} className="focus:text-deep-orange-600">
+            <button onClick={toggleMenu} className="focus:text-deep-orange-700">
               {isMenuOpen ? (
                 <IoClose className="text-4xl text-text-white" />
               ) : (
@@ -97,7 +97,7 @@ const Navbar = () => {
         >
           {navItems.map(({ id, title, link }) => (
             <li
-              className="block cursor-pointer text-2xl font-medium text-black hover:text-deep-orange-600 focus:text-deep-orange-600"
+              className="block cursor-pointer text-2xl font-medium text-black hover:text-deep-orange-700 focus:text-deep-orange-700"
               key={id}
             >
               <Link

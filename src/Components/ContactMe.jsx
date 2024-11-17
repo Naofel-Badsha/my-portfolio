@@ -3,11 +3,11 @@ const ContactMe = () => {
   return (
     <div className="container m-auto px-2" id="contact">
       {/*-----------Heading-----------*/}
-      <div className="py-16 mt-16 mb-10">
+      <div className="mt-12 mb-12">
         <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-white">
           Contact Me
         </h1>
-        <div className="w-20 h-[2px] bg-deep-orange-600 m-auto mt-2"></div>
+        <div className="w-20 h-[2px] bg-deep-orange-700 m-auto mt-2"></div>
       </div>
 
       <div className="flex justify-between gap-10 flex-col lg:flex-row">
@@ -28,7 +28,7 @@ const ContactMe = () => {
               </h1>
               <h3 className="text-lg md:text-2xl lg:text-2xl mt-2 text-gray-500">
                 Professional Front End Developer, & and Basic{" "}
-                <small className="text-2xl text-deep-orange-600 font-bold">
+                <small className="text-2xl text-deep-orange-700 font-bold">
                   MARN Stack
                 </small>{" "}
                 Developer.
@@ -42,7 +42,7 @@ const ContactMe = () => {
               <div>
                 {/*-------Card-------1-----*/}
                 <div className="flex gap-3">
-                  <i className="fa-solid fa-location-dot text-3xl text-deep-orange-600"></i>
+                  <i className="fa-solid fa-location-dot text-2xl text-deep-orange-600"></i>
                   <div>
                     <h2 className="text-xl md:text-3xl lg:text-3xl text-white">
                       Address
@@ -54,9 +54,9 @@ const ContactMe = () => {
                 </div>
                 {/*-------Card-------2-----*/}
                 <div className="flex gap-3 mt-2 mb-2">
-                  <i className="fa-solid fa-envelope text-3xl text-deep-orange-600"></i>
+                  <i className="fa-solid fa-envelope text-2xl text-deep-orange-700"></i>
                   <div>
-                    <h2 className="text-xl md:text-3xl lg:text-3xl text-white">
+                    <h2 className="text-xl md:text-xl lg:text-3xl text-white">
                       Email
                     </h2>
                     <p className="md:text-xl lg:text-xl mt-2 text-blue-gray-500">
@@ -68,7 +68,7 @@ const ContactMe = () => {
               <div>
                 {/*-------Card-------3-----*/}
                 <div className="flex gap-3">
-                  <i className="fa-brands fa-whatsapp text-3xl text-deep-orange-600"></i>
+                  <i className="fa-brands fa-whatsapp text-2xl text-deep-orange-700"></i>
                   <div>
                     <h2 className="text-xl md:text-3xl lg:text-3xl text-white">
                       Whatsapp
@@ -157,7 +157,7 @@ const ContactMe = () => {
             <div className="py-6">
               <button
                 type="submit"
-                className="btn bg-deep-orange-600 hover:bg-[#122025] text-xl w-full border-0 text-white"
+                className="btn bg-deep-orange-700 hover:bg-[#122025] text-xl w-full border-0 text-white"
               >
                 Submit
               </button>
