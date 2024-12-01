@@ -1,6 +1,6 @@
 import "./Css/hero.css";
 import { useTypewriter } from "react-simple-typewriter";
-import NaofelBadshaResume from "../assets/NaofelBadsha.pdf";
+import NaofelBadshaResume from "../assets/BadshaResumi-.pdf";
 const Hero = () => {
   const [text] = useTypewriter({
     words: ["Font End Designer", "& Basic MERN-stack Devloper"],

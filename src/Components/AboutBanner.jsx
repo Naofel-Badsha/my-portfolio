@@ -1,14 +1,14 @@
 import "./Css/AboutBanner.css";
 const AboutBanner = () => {
   return (
-    <div className="container m-auto  px-2 " id="about">
+    <div className="container m-auto px-2" id="about">
       <div className="flex items-center justify-center -z-50 gap-16 flex-col lg:flex-row">
         {/*------------Image-------------*/}
-        <div className="flex-1 animationAbout">
-          <div className="m-auto w-[320px] h-[320px] md:w-[520px] md:h-[520px] lg:w-[520px] lg:h-[520px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full">
+        <div className="animationAbout flex-1">
+          <div className="w-full  ">
             <img
-              src="https://i.ibb.co/RPMjG2J/removebg-preview.png"
-              className="m-auto w-[300px] h-[300px] md:w-[500px] md:h-[500px] lg:w-[500px] lg:h-[500px] bg-gradient-to-r from-[#122025] via-deep-orange-700 to-[#23272b] rounded-full flex items-center justify-center object-cover"
+              src="https://i.ibb.co.com/PQggK3n/w.png"
+              className="m-auto rounded-t-full w-full bg-gradient-to-r from-[#122025] via-deep-orange-700 to-[#23272b] object-cover"
             />
           </div>
         </div>
@@ -55,3 +55,11 @@ const AboutBanner = () => {
 };
 
 export default AboutBanner;
+
+
+{/* <div className="m-auto w-[320px] h-[320px] md:w-[520px] md:h-[520px] lg:w-[520px] lg:h-[520px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full">
+<img
+  src="https://i.ibb.co/RPMjG2J/removebg-preview.png"
+  className="m-auto w-[300px] h-[300px] md:w-[500px] md:h-[500px] lg:w-[500px] lg:h-[500px] bg-gradient-to-r from-[#122025] via-deep-orange-700 to-[#23272b] rounded-full flex items-center justify-center object-cover"
+/>
+</div> */}

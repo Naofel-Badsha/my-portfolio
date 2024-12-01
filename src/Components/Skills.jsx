@@ -12,7 +12,7 @@ const Skills = () => {
     <div className="container m-auto px-2" id="skills">
       {/*-----------Heading-----------*/}
       <div className=" py-5">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-white">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold text-white">
           My Skills
         </h1>
         <div className="w-20 h-[3px] bg-deep-orange-600 m-auto mt-4"></div>
@@ -23,7 +23,7 @@ const Skills = () => {
         {skills.map((item) => (
           <div
             key={item.id}
-            className="flex items-center shadowOne gap-4 rounded-lg py-2 md:py-2 lg:py-3 px-4"
+            className="flex items-center shadowOne gap-4 rounded-lg py-3 md:py-2 lg:py-3 px-4"
           >
             <img
               src={item.image}

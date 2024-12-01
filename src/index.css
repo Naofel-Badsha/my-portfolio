@@ -5,14 +5,10 @@
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  background-color: linear-gradient(145deg, #122025, #23272b);
+  background: linear-gradient(145deg, #122025, #23272b);
   /* background-color: #fffaf0; */
 }
 
-
-body{
-  overflow-x: hidden;
-}
 
 
 

@@ -14,7 +14,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 200) {
+      if (window.scrollY > 10) {
         setIsSticky(true);
       } else {
         setIsSticky(false);
@@ -41,7 +41,7 @@ const Navbar = () => {
       <nav
         className={`z-50 py-4 lg:px-14 px-4 text-whibg-white${
           isSticky
-            ? "sticky  top-0 left-0 right-0 border-b border-black bg-[#122025] text-white duration-300"
+            ? "sticky top-0 left-0 right-0 border-b border-black bg-[#122025] text-white"
             : ""
         }`}
       >
@@ -73,7 +73,7 @@ const Navbar = () => {
           {/*-------Button--------Github------*/}
           <div className="space-x-6 ">
             <a href="https://github.com/Naofel-Badsha">
-              <button className="btn bg-deep-orange-700 border-0 text-xlmd:text-2xl lg:text-2xl text-white hover:bg-[#23272b]">
+              <button className="btn bg-deep-orange-700 border-0 text-xl md:text-2xl lg:text-2xl text-white hover:bg-[#23272b]">
                 GitHub
               </button>
             </a>

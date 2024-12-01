@@ -3,8 +3,8 @@ const ContactMe = () => {
   return (
     <div className="container m-auto px-2" id="contact">
       {/*-----------Heading-----------*/}
-      <div className="mt-12 mb-12">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-white">
+      <div className="mt-16 mb-12">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold text-white">
           Contact Me
         </h1>
         <div className="w-20 h-[2px] bg-deep-orange-700 m-auto mt-2"></div>
@@ -103,7 +103,7 @@ const ContactMe = () => {
                 id="name"
                 autoComplete="name"
                 placeholder="Enter Your Full Name"
-                className="input input-bordered w-full text-lg md:text-xl lg:text-xl text-white placeholder:text-white"
+                className="input input-bordered w-full text-lg md:text-xl lg:text-xl bg-transparent text-white placeholder:text-white"
               />
             </div>
             {/*--------------2-------------*/}
@@ -119,7 +119,7 @@ const ContactMe = () => {
                 id="email"
                 autoComplete="email"
                 placeholder="Enter Your Email"
-                className="input input-bordered w-full text-lg md:text-xl lg:text-xl text-white placeholder:text-white"
+                className="input input-bordered w-full text-lg md:text-xl lg:text-xl bg-transparent text-white placeholder:text-white"
               />
             </div>
             {/*--------------3-------------*/}
@@ -135,7 +135,7 @@ const ContactMe = () => {
                 id="subject"
                 autoComplete="subject"
                 placeholder="Enter Your Subject"
-                className="input input-bordered w-full text-lg md:text-xl lg:text-xl text-white placeholder:text-white"
+                className="input input-bordered w-full text-lg md:text-xl lg:text-xl bg-transparent text-white placeholder:text-white"
               />
             </div>
             {/*--------------4-------------*/}

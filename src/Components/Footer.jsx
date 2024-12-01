@@ -20,8 +20,8 @@ const Footer = () => {
           </div>
 
           <div>
-            <p className="text-xl text-cyan-700 px-2">
-              © All Rights Reserved 2023 - 2024 | Naofel Badsha
+            <p className="text-md text-cyan-700 px-2">
+              © All Rights Reserved 2024 | Naofel Badsha
             </p>
           </div>
         </div>
