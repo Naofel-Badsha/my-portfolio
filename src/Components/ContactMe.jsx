@@ -12,7 +12,7 @@ const ContactMe = () => {
 
       <div className="flex justify-between gap-10 flex-col lg:flex-row">
         {/*----------Img-------And----Artical--------*/}
-        <div className="flex-1 shadowOne rounded-xl p-5">
+        <div className="flex-1 shadowOne rounded-xl p-5 hover:bg-[#122025] duration-200">
           {/*----------Img---------------*/}
           <div className="">
             <img
@@ -84,7 +84,7 @@ const ContactMe = () => {
         </div>
 
         {/*----------Form-----------*/}
-        <div className="flex-1 shadowOne rounded-xl h-[720px]">
+        <div className="flex-1 shadowOne rounded-xl h-[720px] hover:bg-[#122025] duration-200">
           <form
             action="https://getform.io/f/bpjjmdpb"
             method="POST"
@@ -157,7 +157,7 @@ const ContactMe = () => {
             <div className="py-6">
               <button
                 type="submit"
-                className="btn bg-deep-orange-700 hover:bg-[#122025] text-xl w-full border-0 text-white"
+                className="btn bg-deep-orange-700 hover:bg-[#122025] text-xl w-full border-0 hover:border-[2px] text-white"
               >
                 Submit
               </button>

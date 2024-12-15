@@ -23,7 +23,7 @@ const Skills = () => {
         {skills.map((item) => (
           <div
             key={item.id}
-            className="flex items-center shadowOne gap-4 rounded-lg py-3 md:py-2 lg:py-3 px-4"
+            className="flex items-center shadowOne gap-4 rounded-lg py-3 md:py-2 lg:py-3 px-4 hover:bg-[#122025] border-0 hover:border-[1px] duration-200"
           >
             <img
               src={item.image}

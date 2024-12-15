@@ -13,7 +13,7 @@ const Portfolio = () => {
       {/*---------------Portfolio---------*/}
       <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-2 mt-10">
         {/*---------Portfolio-------1---------*/}
-        <div className="shadowOne w-full p-3 md:p-5 lg:p-5 rounded-xl">
+        <div className="shadowOne w-full p-3 md:p-5 lg:p-5 rounded-xl hover:bg-[#122025] border-0 hover:border-[1px] duration-200">
           <div>
             <img
               src="https://i.ibb.co.com/qMCgxGp/Choching-Center.png"
@@ -36,7 +36,7 @@ const Portfolio = () => {
           </div>
         </div>
         {/*---------Portfolio-------2---------*/}
-        <div className="shadowOne w-full p-3 md:p-5 lg:p-5 rounded-xl">
+        <div className="shadowOne w-full p-3 md:p-5 lg:p-5 rounded-xl hover:bg-[#122025] border-0 hover:border-[1px] duration-200">
           <div>
             <img
               src="https://i.ibb.co.com/88qwJHd/Ecommers-1.png"
@@ -60,7 +60,7 @@ const Portfolio = () => {
         </div>
 
         {/*---------Portfolio-------3---------*/}
-        <div className="shadowOne w-full p-3 md:p-5 lg:p-5 rounded-xl">
+        <div className="shadowOne w-full p-3 md:p-5 lg:p-5 rounded-xl hover:bg-[#122025] border-0 hover:border-[1px] duration-200">
           <div>
             <img
               src="https://i.ibb.co.com/LJM7jPw/Food-Delevary.png"
@@ -84,7 +84,7 @@ const Portfolio = () => {
         </div>
 
         {/*---------Portfolio-------4---------*/}
-        <div className="shadowOne w-full p-3 md:p-5 lg:p-5 rounded-xl">
+        <div className="shadowOne w-full p-3 md:p-5 lg:p-5 rounded-xl hover:bg-[#122025] border-0 hover:border-[1px] duration-200">
           <div>
             <img
               src="https://i.ibb.co.com/RG8mQGW/Hotel-Booking-2.png"
@@ -108,7 +108,7 @@ const Portfolio = () => {
         </div>
 
         {/*---------Portfolio-------5---------*/}
-        <div className="shadowOne w-full p-3 md:p-5 lg:p-5 rounded-xl">
+        <div className="shadowOne w-full p-3 md:p-5 lg:p-5 rounded-xl hover:bg-[#122025] border-0 hover:border-[1px] duration-200">
           <div>
             <img
               src="https://i.ibb.co.com/XFbcnmJ/Construction-PP-1.png"

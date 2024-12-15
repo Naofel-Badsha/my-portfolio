@@ -12,12 +12,14 @@ const Hero = () => {
 
   // bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
   // bg-gradient-to-r from-[#122025] via-deep-orange-600 to-[#23272b] heroBackground
+  // m-auto w-[320px] h-[320px] md:w-[520px] md:h-[520px] lg:w-[520px] lg:h-[520px] bg-[#122025] rounded-full
+  // bg-[#122025]
   return (
     <div className="flex items-center justify-center container m-auto min-h-screen py-20" id="home">
       <div className="flex items-center justify-between gap-12 flex-col lg:flex-row-reverse">
         {/*--------------Image-------------*/}
         <div className="flex-1 animationHomePage" data-aos="fade-left">
-          <div className="m-auto w-[320px] h-[320px] md:w-[520px] md:h-[520px] lg:w-[520px] lg:h-[520px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full animationHomePage">
+          <div className="animationHomePage">
             <img
               src="https://i.ibb.co.com/m5kfBsS/profile-7-removebg-preview.png"
               className="m-auto w-[300px] h-[300px] md:w-[500px] md:h-[500px] lg:w-[500px] lg:h-[500px] bg-gradient-to-r from-[#122025] via-deep-orange-700 to-[#23272b] rounded-full flex items-center justify-center object-cover"
@@ -65,7 +67,7 @@ const Hero = () => {
           <div className="py-10">
             {/*--------DownlodePDF------and------CVButton--------*/}
             <a href={NaofelBadshaResume} download="NaofelBadshaResume">
-              <button className="btn border-0 text-lg md:text-xl lg:text-2xl bg-deep-orange-700 hover:bg-[#122025] text-white rounded-md">
+              <button className="btn border-0 hover:border-[2px] text-lg md:text-xl lg:text-2xl bg-deep-orange-700 hover:bg-[#122025] text-white rounded-md">
                 Download Cv{" "}
                 <i className="fa-solid fa-file-arrow-down ml-2 text-white text-2xl"></i>
               </button>

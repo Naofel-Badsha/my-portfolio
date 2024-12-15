@@ -5,10 +5,12 @@ const AboutBanner = () => {
       <div className="flex items-center justify-center -z-50 gap-16 flex-col lg:flex-row">
         {/*------------Image-------------*/}
         <div className="animationAbout flex-1">
+        {/* https://i.ibb.co.com/kHvYZ9x/Whats-App-Image-2024-12-15-at-1-08-26-PM-1.jpg
+        https://i.ibb.co.com/TqG3vmY/Whats-App-Image-2024-12-15-at-1-08-26-PM.jpg */}
           <div className="w-full  ">
             <img
-              src="https://i.ibb.co.com/PQggK3n/w.png"
-              className="m-auto rounded-t-full w-full bg-gradient-to-r from-[#122025] via-deep-orange-700 to-[#23272b] object-cover"
+              src="https://i.ibb.co.com/gwwp3xm/about-12-removebg-preview.png"
+              className="m-auto rounded-t-full w-full bg-gradient-to-r from-[#122025] via-deep-orange-700 to-[#23272b]"
             />
           </div>
         </div>
@@ -42,7 +44,8 @@ const AboutBanner = () => {
           <div className="py-10">
             {/*--------DownlodePDF------and------CVButton--------*/}
             <a href="contact">
-              <button className="btn border-0 text-lg md:text-xl lg:text-2xl bg-deep-orange-700 text-white hover:bg-[#122025] rounded-md">
+            
+              <button className="btn border-0 text-lg md:text-xl lg:text-2xl bg-deep-orange-700 text-white hover:bg-[#122025] hover:border-[2px] rounded-md">
                 Hire Me
                 <i className="fa-solid fa-arrow-right ml-2 mt-1 text-white text-2xl"></i>
               </button>
